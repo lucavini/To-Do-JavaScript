@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do Javascript</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+
+        <div id="task-container">
+            <div id="task-header">
+                <h2>Salve a sua próxima tarefa:</h2>
+                <form id="add-task-form">
+                    <input type="text" id="task-title" placeholder="O que você vai fazer?">
+                    <button id="add-btn" type="submit">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div id="task-list-container">
+                <h2>Essas são as suas tarefas:</h2>
+                <ul id="task-list">
+                    
+                    <li class="task-box template hide">
+                        <span class="task-title"></span>
+                        <i class="done-btn  fas fa-check"></i>
+                        <i class="remove-btn fas fa-times"></i>
+                    </li> 
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <script src="https://kit.fontawesome.com/d87da2b369.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

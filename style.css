@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #e65763, #34073d);
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#task-container{
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*tasks form*/
+
+#task-header{
+    margin-top: 40px;
+}
+
+#add-task-form{
+    position: relative;
+}
+
+#add-task-form input{
+    box-sizing: border-box;
+    border: 1px solid #34073d;
+    background: #fff;
+    color: #34073d;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+}
+
+#add-task-form input::placeholder{
+    color: #34073d;
+}
+
+#add-task-form input:focus{
+    outline: none;
+}
+
+#add-task-form button{
+    position: absolute;
+    background: #fff;
+    border: 1px solid #34073d;
+    cursor: pointer;
+    width: 60px;
+    height: 54px;
+    top: 0;
+    right: 0;
+}
+
+#add-task-form button:hover{
+    transition: 0.3s;
+    background-color: #34073d;
+    color: #fff;
+}
+
+
+/*task-list*/
+
+#task-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#task-list li{
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border-bottom: 3px solid #34073d;
+    background-color: #fff;
+    color: #343434;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+#task-list li span{
+    font-size: 18px;
+}
+
+.task-box i{
+    position: absolute;
+    top: 0;
+    height: 40px;
+    cursor: pointer;
+    width: 30px;
+    padding: 5px;
+    line-height: 40px;
+}
+
+.done-btn{
+    right: 40px;
+    text-align: center;
+}
+.done-btn:hover{
+    color: #fff;
+    background-color: #09e01b;
+    transition: .3s;
+}
+
+.remove-btn{
+    right: 0px;
+    text-align: center;
+}
+
+.remove-btn:hover{
+    color: #fff;
+    background-color: #eb0927;
+    transition: .3s;
+}
+
+.hide{
+    display: none;
+}
+
+#task-list li.done{
+    background-color: #34073d;
+    color: #fff;
+    text-decoration: line-through;
+    transition: .3s;
+}
